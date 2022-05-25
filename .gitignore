@@ -154,3 +154,4 @@ cython_debug/
 Pipfile
 Pipfile.lock
 config/settings.py
+db.sqlite3
