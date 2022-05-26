@@ -3,5 +3,8 @@ from django.db import models
 
 # Create your models here.
 class User(AbstractUser):
-    bio = models.TextField(default="")  # isgonna showup in admin page
-    pass
+    """Custom User Model"""
+
+    avatar = models.ImageField(null=True)
+    gender = models.CharField(max_length=10, null=True)
+    bio = models.TextField(default="")  # or null = True
